@@ -25,7 +25,7 @@ class  Dietplan
 	Dietplan(int a )
 	{ 
 		
-		System.out.println("Welcome to The Dietplan Program for 2 Months");
+		System.out.println("Welcome to The Dietplan Program of 2 Months");
 		System.out.println("Note: Enter the data in meters and kgs where required!!");
 		System.out.println("=======================================================================");
 		
@@ -116,24 +116,9 @@ class  Dietplan
 	
 	
 	public static void main(String []args)
-	{ 
-		 //Dietplan d = new Dietplan("M",24,65,175);
+	{
 	    Dietplan d = new Dietplan();
-	
-		/*Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the data for Dietplan");
-		System.out.print("Enter the Gender M/F: ");
-		String s = sc.next();
-		System.out.print("Enter the Age : ");
-		int a = sc.nextInt();
-		System.out.print("Enter the Weight in Kg: ");
-		double d1 = sc.nextDouble();
-		System.out.print("Enter the Height in cm: ");
-		double d2 = sc.nextDouble();
-		
-		d.setdata(s,a,d1,d2);*/
 		d.getdata();
-		
 		d.calculateBmi();
 	}
 }
