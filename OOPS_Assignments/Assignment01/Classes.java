@@ -7,7 +7,7 @@ class MathOperation{
 	
 }
 
-public class classes{
+public class Classes{
 	static void add(){
 		System.out.println("Add : "+(a+b));
 	}
