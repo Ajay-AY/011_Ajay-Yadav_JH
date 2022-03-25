@@ -101,7 +101,7 @@ class Table{           // Using Single FOR loop
 }*/
 
 /*
-class Table{                 // using Single WHILE loop anf for loop
+class Table{                 // using Single WHILE loop and for loop
 	static int i = 1;
     static int j = 1;
 	public static void main(String []args){
