@@ -24,7 +24,7 @@ class Bird extends Animal{
 		}
 }
 
-class HW{
+class AnimalType{
 	public static void main(String... args){
 		Animal a = new Animal();
 		a.eat();
