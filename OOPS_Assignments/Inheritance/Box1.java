@@ -15,7 +15,7 @@ class Box{
 }
 
 
-class Practise1{
+class Box1{
 
 	public static void main(String[]args){
 	Box b = new Box(10,20,15);
