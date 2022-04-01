@@ -5,7 +5,7 @@ class Calculator{
 }
 
 
-class Practise2{
+class Calc{
 	public static void main(String[]args){
 		System.out.println("Ans is : "+(Calculator.powerInt(3,4)));
 	}
