@@ -1,0 +1,84 @@
+import java.util.Scanner;
+class HighArray{
+	int k;
+	int[]arr;
+	int n;
+	
+	public HighArray(){
+		arr=new int[100];
+		
+		
+	}
+	
+	public void add(int n){
+		this.n = n;
+		
+		System.out.println("Please add elements upto size "+n+" : ");
+		System.out.println("Enter the Value : ");
+		for(int i = 0;i<n;i++){
+			Scanner sc = new Scanner(System.in);
+			System.out.print(" arr["+i+"] = ");
+			arr[i]= sc.nextInt();
+			
+		}
+	}
+	
+	public void display(){
+		for(int i = 0;i<n;i++){
+		System.out.print(arr[i]+" ");
+	}
+	System.out.println();
+	}
+	
+	
+	public boolean find(int key){
+		
+			for( k=0;k<n;k++){
+				if(arr[k]==key)
+					break;
+				
+			}
+			if(k==n)
+				return false;
+			else
+			return true;
+	
+		}
+		
+		
+		void delete(int key){
+			
+			for( k=0;k<n;k++){
+				    if(arr[k]==key){
+						n--;
+					break;
+					}
+			      }
+				  
+			for(int j = k;j<n;j++){
+				arr[j]= arr[j+1];
+			 }
+				
+			
+		
+		}
+	
+	
+}
+
+
+class HighArrayApp{
+	public static void main(String...args){
+	HighArray a = new HighArray();
+	a.add(10);
+	a.display();
+	
+	System.out.println(a.find(22));
+	a.delete(50);
+	a.display();
+	
+	
+	
+	}
+	
+}
